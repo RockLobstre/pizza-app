@@ -4,10 +4,15 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Adapter;
+import android.widget.ListView;
 import android.widget.TextView;
 
 import com.rocklobstre.pizzaApp.R;
+import com.rocklobstre.pizzaApp.adapter.PizzaAdapter;
 import com.rocklobstre.pizzaApp.model.Order;
+
+import java.util.ArrayList;
 
 
 public class SuccessActivity extends AppCompatActivity {
@@ -19,13 +24,26 @@ public class SuccessActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_success);
 
-        TextView success = findViewById(R.id.title);
+        ListView lv = findViewById(R.id.listview);
+        TextView tvSuccess = findViewById(R.id.title);
 
         Bundle bundle = getIntent().getExtras();
         if (bundle != null)
             order = (Order) bundle.getSerializable("order");
         else
             order = new Order();
+
+        ArrayList<Order> shoppingBasket = new ArrayList<Order>();
+        shoppingBasket.add(order);
+        PizzaAdapter adapter = new PizzaAdapter(this, 0, shoppingBasket);
+
+        lv.setAdapter(adapter);
+
+        String[] types = getResources().getStringArray(R.array.types);
+
+        tvSuccess.setText(String.format(getResources().getString(R.string.success_text),
+                order.getFullName(), types[order.getName()],
+                order.getPostalCode(), order.getAddress(), order.getTelephoneNumber()));
     }
 
     @Override

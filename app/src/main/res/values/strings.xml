@@ -43,5 +43,5 @@
     <string name="submit">Send</string>
     <string name="error_edittext">This Field is Required</string>
 
-    <string name="success_text">%1$s Thank you for your online order.Your %2$s order successfully received andwill be delivered in %3$d %4$s your contact number is %5$d</string>
+    <string name="success_text">%1$s Thank you for your online order.Your %2$s order successfully received and will be delivered in %3$s %4$s your contact number is %5$s</string>
 </resources>

@@ -45,22 +45,22 @@ public class PizzaAdapter extends ArrayAdapter<Order> {
         String tmp = "";
 
         if(commande.getIng1() > 0){
-            tmp += ingredients[1] + (commande.getIng1() == 1 ? "" : "(Extra)") +", ";
+            tmp += ingredients[0] + (commande.getIng1() == 1 ? "" : "(Extra)") +", ";
         }
         if(commande.getIng2() > 0){
-            tmp += ingredients[2] + (commande.getIng2() == 1 ? "" : "(Extra)") +", ";
+            tmp += ingredients[1] + (commande.getIng2() == 1 ? "" : "(Extra)") +", ";
         }
         if(commande.getIng3() > 0){
-            tmp += ingredients[3] + (commande.getIng3() == 1 ? "" : "(Extra)") +", ";
+            tmp += ingredients[2] + (commande.getIng3() == 1 ? "" : "(Extra)") +", ";
         }
         if(commande.getIng4() > 0){
-            tmp += ingredients[4] + (commande.getIng4() == 1 ? "" : "(Extra)") +", ";
+            tmp += ingredients[3] + (commande.getIng4() == 1 ? "" : "(Extra)") +", ";
         }
         if(commande.getIng5() > 0){
-            tmp += ingredients[5] + (commande.getIng5() == 1 ? "" : "(Extra)") +", ";
+            tmp += ingredients[4] + (commande.getIng5() == 1 ? "" : "(Extra)") +", ";
         }
         if(commande.getIng6() > 0){
-            tmp += ingredients[6] + (commande.getIng6() == 1 ? "" : "(Extra)") +", ";
+            tmp += ingredients[5] + (commande.getIng6() == 1 ? "" : "(Extra)") +", ";
         }
 
 
