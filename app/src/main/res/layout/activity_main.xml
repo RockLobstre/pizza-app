@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.rocklobstre.pizzaApp.com.rocklobstre.pizzaApp.activites.MainActivity"
+    >
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@color/bottombarborder"
+        android:clipToPadding="false"
+        android:elevation="24dp"
+        android:orientation="horizontal"
+        android:weightSum="1.0">
+
+        <Button
+            android:id="@+id/prevbt"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight=".5"
+            android:background="@color/bottombar"
+            android:paddingLeft="8sp"
+            android:text="Previous"
+            android:textAlignment="textStart"
+            android:textAllCaps="false"
+            android:textColor="@color/bottombartext"
+            android:textSize="14sp"
+            android:typeface="sans" />
+
+        <Button
+            android:id="@+id/nextbt"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight=".5"
+            android:background="@color/bottombar"
+            android:paddingRight="8sp"
+            android:text="Next "
+            android:textAlignment="textEnd"
+            android:textAllCaps="false"
+            android:textColor="@color/bottombartext"
+            android:textSize="14sp"
+            android:typeface="sans" />
+    </LinearLayout>
+
+</android.support.design.widget.CoordinatorLayout>

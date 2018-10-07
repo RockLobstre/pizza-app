@@ -1,0 +1,47 @@
+<resources>
+    <string name="app_name">AndPizza</string>
+
+    <string-array name="types">
+        <item>Meat Supreme</item>
+        <item>Super Hawaiian</item>
+        <item>Veggie</item>
+        <item>Mediterranean</item>
+        <item>Cheddar Supreme</item>
+    </string-array>
+
+    <string-array name="sizes">
+        <item>Small</item>
+        <item>Medium</item>
+        <item>Large</item>
+        <item>Extra-Large</item>
+    </string-array>
+
+    <string-array name="ingreds">
+        <item>Cheese</item>
+        <item>Green Pepper</item>
+        <item>Smoked Ham</item>
+        <item>Spinach</item>
+        <item>Black Olives</item>
+        <item>Spanish Onions</item>
+    </string-array>
+
+    <string-array name="ingr">
+        <item>Without</item>
+        <item>With</item>
+        <item>Extra</item>
+    </string-array>
+
+    <string name="checkout">Checkout!</string>
+    <string name="next">Next</string>
+    <string name="prev">Previous</string>
+
+    <string name="fullName">Full Name:\u0020</string>
+    <string name="address">Address:\u0020</string>
+    <string name="postalCode">Postal Code:\u0020</string>
+    <string name="telephoneNumber">Telephone Number:\u0020</string>
+    <string name="paymentInformation">Payment Information:\u0020</string>
+    <string name="submit">Send</string>
+    <string name="error_edittext">This Field is Required</string>
+
+    <string name="success_text">%1$s Thank you for your online order.Your %2$s order successfully received andwill be delivered in %3$d %4$s your contact number is %5$d</string>
+</resources>
